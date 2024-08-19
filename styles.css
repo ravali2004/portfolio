@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(35,35,35);
+}
+nav{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    width: 100%;
+    color: white;
+    font-size: large;
+    overflow: hidden;
+    padding: 10px;
+    position: fixed;
+}
+li{
+    display: flex;
+    float: inline-start;
+}
+li a{
+    padding: 15px;
+    display: block;
+    color: white;
+}
+li a:hover{
+    color:#ED2279
+}
+.contact_btn{
+    padding: 10px 30px 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #ED2279;
+    border-radius: 30px;
+    font-size: large;
+    transition: .5s ease;
+}
+.contact_btn:hover{
+    background-color: #ED2279;
+}
+
+div.description{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 200px;
+    font-size: large;
+    color: white;
+}
+div.desc{
+    padding: 100px 60px;
+}
+h1.desc_head1{
+    font-size: 25px;
+}
+h1.desc_header2{
+    font-size: 40px;
+    margin-top: 10px;
+}
+h1.desc_head2 span{
+    color: #ED2279;
+    position: relative;
+}
+h1.desc_head2 span:after{
+    content: "";
+    position: relative;
+    left: 0;
+    height: 100%;
+    border-left: 3px solid #ED2279;
+    right:-2x;background-color: rgb(35,35,35);
+    animation: text 3s infinite backwards steps(10);
+}
+@keyframes text{
+    0%{
+        left:0;
+    }
+    50%{
+        left:100%;
+    }
+    100%
+    left:0;
+}
+
+.desc p{
+    margin-top: 15px;
+}
+div.font i{
+    margin: 8px;
+    margin-top: 20px;
+    border: 1px solid #ED2279;
+    padding: 10px;
+    border-radius: 50px;
+    transition: .5s ease;
+}
+div.font i:hover{
+    background-color: #ED2279;
+    box-shadow: 0px 0px 20px #ED2279;
+    transform: translatey(-10px);
+}
+bitton.home_btn{
+    padding: 15px 25px 15px 25px;
+    font-size: 20px;
+    background-color: #ED2279;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: opx 0px 20px #ED2279;
+    transition: .3s ease;
+    border: none;
+}
+button.home_btn:hover{
+    background:transparent;
+    border:2px solid #ED2279;
+    color: white;
+}

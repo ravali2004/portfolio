@@ -69,11 +69,11 @@ h1.desc_head2 span{
 }
 h1.desc_head2 span:after{
     content: "";
-    position: relative;
+    position: absolute;
     left: 0;
     height: 100%;
     border-left: 3px solid #ED2279;
-    right:-2x;background-color: rgb(35,35,35);
+    right:-2px;background-color: rgb(35,35,35);
     animation: text 3s infinite backwards steps(10);
 }
 @keyframes text{
@@ -83,8 +83,10 @@ h1.desc_head2 span:after{
     50%{
         left:100%;
     }
-    100%
-    left:0;
+    100%{
+        left:0;
+    }
+    
 }
 
 .desc p{
@@ -114,7 +116,47 @@ bitton.home_btn{
     border: none;
 }
 button.home_btn:hover{
-    background:transparent;
+    background: transparent;
     border:2px solid #ED2279;
     color: white;
+}
+.about{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 150px;
+    padding-top: 80px;
+    color: white;
+}
+.about_desc{
+    margin-left: 40px;
+}
+.about_desc h1{
+    font-size: 40px;
+}
+.about_desc h2{
+    margin-top: 10px;
+}
+.about_desc span{
+    color: #ED2279;
+}
+.about_desc p{
+    margin-top: 10px;
+}
+button.about_btn{
+    padding: 15px 25px 15px 25px;
+    font-size: 20px;
+    background-color: #ED2279;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #ED2279;
+    border:none;
+    transition: .3s ease;
+}
+button.about_btn:hover{
+    background: transparent;
+    border: 2px solid #ED2279;
+    color: white;
+}
+.about_photo:hover{
+    box-shadow: 0px 0px 10px #ED2279;
 }

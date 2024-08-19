@@ -160,3 +160,94 @@ button.about_btn:hover{
 .about_photo:hover{
     box-shadow: 0px 0px 10px #ED2279;
 }
+h1.service_head{
+    margin-top: 150px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding-top: 80px;
+}
+h1.service_head span{
+    color: #ED2279;
+}
+div.card{
+    display: flex;
+    justify-self: space-around;
+    gap:20px;
+    text-align:center;
+    margin:50px;
+    color: white;
+}
+.card_layout{
+    background-color: rgb(60, 60, 60);
+    padding: 30px;
+    border-radius:20px ;
+    transition: .3s ease;
+}
+.card_layout:hover{
+    border: 2px solid #ED2279;
+    box-shadow: 0px 0px 15px #ED2279;
+}
+.card_layout i{
+    font-size:25px;
+    color: #ED2279;
+}
+.card_layout h2{
+    font-size: 25px;
+    margin: 15px;
+}
+.card_layout p{
+    margin-top: 15px;
+}
+button.service-btn{
+    padding: 10px 25px 10px 25px;
+    font-size: 20px;
+    background-color: #ED2279;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #ED2279;
+    border:none;
+    transition: .3s ease;
+}
+button.service_btn:hover{
+    background: transparent;
+    border: 2px solid #ED2279;
+    color:white;
+}
+h1.port_head{
+    margin-top: 150px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding-top: 80px;
+}
+h1.port_head span{
+    color: #ED2279;
+}
+div.project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project_card{
+    margin: 30px;
+    margin-top: 60px;
+    box-shadow: 5px 5px 15px black;
+    position: relative;
+}
+.project_desc{
+    width: 430px;
+    box-shadow: border-box;
+    position: absolute;
+    padding: 5px;
+    color: white;
+    bottom: 0px;
+    text-align: center;
+    transition: .5s ease-out;
+}
+.project_card:hover .project_desc{
+    border-image:fill 0 linear-gradient(#0001,#ED2279) ;
+    height: 200px;
+    bottom: 0px;
+    padding: 60;
+}

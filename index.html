@@ -15,11 +15,14 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="service">Service</a></li>
-            <li><a href="portfolio">Portfolio</a></li>
-            <li><a href="contact">Contact</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="#contact"><button class="contact_btn">Contact Me</button></a>
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <!-- <a href="#contact"><button class="contact_btn">Contact Me</button></a> -->
     </nav>
     <section id="home">
         <div class="description">
@@ -31,7 +34,7 @@
                     <i class="fa-brands fa-facebook-f"></i>
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-linkedin-in"></i>
-                    <i class="fa-brands fa-phone"></i>
+                    <i class="fas fa-phone"></i>
                 </div>
                 <button class="home_btn">Download cv</button>
             </div>
@@ -55,7 +58,7 @@
     </section>
 
     <section id = "service">
-        <h1 class="service_head">Our <span> Services</span></h1>
+        <h1 class="service_head">Our <span> Service</span></h1>
         <div class="card">
             <div class="card_layout">
                 <i class="fas fa-code"></i>
@@ -81,18 +84,46 @@
         <h1 class="port_head">Latest<span>Project</span></h1>
         <div class="project">
             <div class="project_card">
-                <img src="wd.jfif" alt="" width="430px" height="350px">
+                <img src="web.jpg" alt="" width="430px" height="350px">
                 <div class="project_desc">
                     <h1>Web Design</h1>
                 </div>
             </div>
             <div class="project_card">
-                <img src="graphics.jfif" alt="" width="43px" heght="350px">
+                <img src="graphic.jpg" alt="" width="430px" heght="430px">
                 <div class="project_desc">
                     <h1>Graphics Design</h1>
                 </div>
             </div>
         </div>
     </section>
+    <section id="contact">
+         <h1 class="contact_head">Contact<span>Me!</span></h1>
+         <div class="form">
+            <form action="#home">
+                <div class="contact">
+                    <div class="form_group">
+                        <input type="text" name="name" placeholder="enter full name" required=""><br>
+                    </div>
+                    <div class="form_group">
+                        <input type="email" name="email" placeholder="enter  email" required=""><br>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="form_group">
+                        <input type="number" name="mno" placeholder="enter moblie no." required=""><br>
+                    </div>
+                    <div class="form_group">
+                        <input type="text" name="esub" placeholder="enter  email subject" required=""><br>
+                    </div>
+                </div>
+                <textarea name="sub" id="sub" placeholder="enter message" rows="8"></textarea>
+                <button class="form_btn">Send Message</button>
+            </form>
+         </div>
+    </section>
+    <div class="footer">
+        <p> Copyright 2024 by code writer || All Rights Reserved....</p>
+    </div>
 </body>
 </html>

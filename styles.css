@@ -88,6 +88,45 @@ h1.desc_head2 span:after{
     }
     
 }
+@media screen and (max-width:820px){
+    .checkbtn{
+        display: block;
+        margin-left: 150px;
+    }
+    .nav_head{
+        padding-left: 10px;
+    }
+    nav ul{
+        z-index: 1000px;
+        position: fixed;
+        width: 60px;
+        height: 50vh;
+        background-color: black;
+        top :50px;
+        right: 0%;
+        padding: 20px;
+        transition: all .5s;
+    }
+    nav li{
+        text-align: center;
+        display:block;
+        float: left;
+        width: 330px;
+        height: 60px;
+        padding: 5px;
+    }
+    nav.contact_btn{
+        width:90%;
+    }
+    nav li a{
+        font-size: 20px;
+        color: white;
+    }
+    .checkbox:checked ~ ul{
+        right:0;
+    }
+}
+
 
 .desc p{
     margin-top: 15px;
@@ -105,7 +144,7 @@ div.font i:hover{
     box-shadow: 0px 0px 20px #ED2279;
     transform: translatey(-10px);
 }
-bitton.home_btn{
+button.home_btn{
     padding: 15px 25px 15px 25px;
     font-size: 20px;
     background-color: #ED2279;
@@ -249,5 +288,71 @@ div.project{
     border-image:fill 0 linear-gradient(#0001,#ED2279) ;
     height: 200px;
     bottom: 0px;
-    padding: 60;
+    padding: 60px;
 }
+.project_card h1{
+    opacity: 0;
+    visibility: hidden;
+}
+.project_card:hover h1{
+    opacity: 1;
+    visibility: visible;
+}
+/* contact style */
+h1.contact_head{
+    margin-top: 150px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding-top: 50px;
+}
+h1.contact_head{
+    font-size: 40px;
+    padding-top: 50px;
+}
+h1.contact_head span{
+    color: #ED2279;
+}
+#contact form{
+    margin: 50px;
+}
+div.contact{
+    display: flex;
+    justify-content: center;
+}
+form input,textarea{
+    width: 400px;
+    margin: 10px;
+    padding: 15px;
+    background-color: rgb(60, 60, 60);
+    color: wheat;
+    border: none;
+    border-radius: 10px;
+}
+form textarea{
+    margin-left: 170px;
+}
+button.form_btn{
+    padding: 15px 25px 15px 25px;
+    font-size: 20px;
+    background-color: #ED2279;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #ED2279;
+    border:none;
+    margin-left: 490px;
+    transition: .3s ease;
+}
+button.form_btn:hover{
+    background: transparent;
+    border: 2px solid #ED2279;
+    color: white;
+}
+.footer{
+    background-color: black;
+    color: white;
+    padding: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
